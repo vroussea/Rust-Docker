@@ -18,6 +18,8 @@ jobs:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
+#      - store_test_results:
+#        path: test-results
       - checkout
       - run: my-test-commands
   deploy:
