@@ -7,7 +7,7 @@ jobs:
       - image: docker:17.05.0-ce-git
     steps:
       - checkout
-      - run: docker build
+      - run: docker build -t springboot .
   test:
     docker:
       - image: cimg/<language>:<version TAG>
